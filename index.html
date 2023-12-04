@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="src/style.css">
+  <!-- Awesome -->
+  <script src="https://kit.fontawesome.com/4d30898eec.js" crossorigin="anonymous"></script>
+  <title>Dark mode</title>
+</head>
+
+<body>
+  <div id="app" class="h-screen w-screen flex justify-center items-center bg-neutral-400 flex-col dark:bg-white">
+    <button class="mb-5 font-bold text-3xl cursor-pointer text-white dark:text-black" id="text-change">Dark
+      Mode</button>
+    <div class="h-72 shadow-2xl rounded-md bg-zinc-200 dark:bg-neutral-900 overflow-hidden flex">
+      <div class="h-full">
+        <img class="w-52 h-full object-cover" src="src/assets/jordan.jpg" alt="Jordan Iamge" title="Jordan">
+      </div>
+      <div class="text-center w-72 p-2 flex flex-col justify-between">
+        <strong class="text-3xl dark:text-white">Air Jordan 1 Retro HIGH</strong>
+        <section class="h-20 flex items-center justify-around border-b-2 border-neutral-600">
+          <span
+            class="cursor-pointer bg-zinc-700 w-10 h-10 flex justify-center items-center rounded-md text-white font-medium">xs</span>
+          <span
+            class="cursor-pointer bg-zinc-700 w-10 h-10 flex justify-center items-center rounded-md text-white font-medium">sm</span>
+          <span
+            class="cursor-pointer bg-zinc-700 w-10 h-10 flex justify-center items-center rounded-md text-white font-medium">md</span>
+          <span
+            class="cursor-pointer bg-zinc-700 w-10 h-10 flex justify-center items-center rounded-md text-white font-medium">lg</span>
+          <span
+            class="cursor-pointer bg-zinc-700 w-10 h-10 flex justify-center items-center rounded-md text-white font-medium">xl</span>
+        </section>
+        <div class="flex justify-between items-center flex-wrap capitalize">
+          <p class="text-lg dark:text-white">price: <span class="font-medium">$79</span></p>
+          <div class="flex gap-1">
+            <Button class="bg-sky-700 px-4 py-1 text-white rounded shadow-lg text-lg">Add <i
+                class="fa-solid fa-cart-shopping"></i></Button>
+            <button class="text-white bg-red-600 h-9 py-1 px-2 rounded"><i
+                class="fa-regular fa-heart fa-lg"></i></button>
+          </div>
+        </div>
+        <footer class="dark:text-white">
+          <a href="https://es.wikipedia.org/wiki/Air_Jordan" target="_blank" class="underline decoration-wavy">More
+            about this product</a>
+        </footer>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="src/main.js"></script>
+</body>
+
+</html>
